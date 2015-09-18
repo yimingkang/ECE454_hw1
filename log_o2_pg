@@ -1,0 +1,1374 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 83.57      2.34     2.34                             etext
+  5.71      2.50     0.16                             load_rc_tree_C
+  2.86      2.58     0.08 18254940     0.00     0.00  load_rc_tree_T
+  1.79      2.63     0.05 18463104     0.00     0.00  print_place
+  1.43      2.67     0.04                             CountTokens
+  0.71      2.69     0.02                             free_rc_tree
+  0.36      2.70     0.01  3660941     0.00     0.00  read_netlist
+  0.36      2.71     0.01  1413620     0.00     0.00  alloc_and_load_timing_graph
+  0.36      2.72     0.01   262990     0.00     0.00  update_route_tree
+  0.36      2.73     0.01    20054     0.00     0.00  try_directed_search_route
+  0.36      2.74     0.01    13508     0.00     0.00  ReadLineTokens
+  0.36      2.75     0.01    10210     0.00     0.00  alloc_and_load_pin_to_track_map
+  0.36      2.76     0.01      124     0.08     0.08  comp_td_point_to_point_delay
+  0.36      2.77     0.01        2     5.00     5.00  try_swap
+  0.36      2.78     0.01        1    10.00    10.00  alloc_and_load_grid
+  0.36      2.79     0.01                             comp_td_costs
+  0.36      2.80     0.01                             load_one_fb_fanout_count
+  0.00      2.80     0.00 61852301     0.00     0.00  _fini
+  0.00      2.80     0.00   446075     0.00     0.00  timing_driven_route_net
+  0.00      2.80     0.00   387786     0.00     0.00  my_chunk_malloc
+  0.00      2.80     0.00   385328     0.00     0.00  ProcessOption
+  0.00      2.80     0.00   272721     0.00     0.00  try_breadth_first_route
+  0.00      2.80     0.00   217602     0.00     0.00  get_mst_of_net
+  0.00      2.80     0.00   166056     0.00     0.00  load_net_slack
+  0.00      2.80     0.00    68548     0.00     0.00  FreeTokens
+  0.00      2.80     0.00    65868     0.00     0.00  print_timing_graph
+  0.00      2.80     0.00    58080     0.00     0.00  allocate_and_load_critical_path
+  0.00      2.80     0.00    30888     0.00     0.00  sync_nets_to_blocks
+  0.00      2.80     0.00    29040     0.00     0.00  print_net_delay
+  0.00      2.80     0.00    21562     0.00     0.00  XmlReadArch
+  0.00      2.80     0.00    20512     0.00     0.00  ProcessChanWidthDistrDir
+  0.00      2.80     0.00    19635     0.00     0.00  draw_chany_to_chany_edge
+  0.00      2.80     0.00    14781     0.00     0.00  try_place
+  0.00      2.80     0.00     9106     0.00     0.00  add_rr_graph_C_from_switches
+  0.00      2.80     0.00     6904     0.00     0.00  alloc_ivector_and_copy_int_list
+  0.00      2.80     0.00     5614     0.00     0.00  my_fgets
+  0.00      2.80     0.00     1359     0.00     0.00  free_chunk_memory
+  0.00      2.80     0.00     1120     0.00     0.00  load_net_delay_from_routing
+  0.00      2.80     0.00      955     0.00     0.00  get_timing_driven_expected_cost
+  0.00      2.80     0.00      954     0.00     0.01  build_rr_graph
+  0.00      2.80     0.00      900     0.00     0.00  draw_pin_to_chan_edge
+  0.00      2.80     0.00      867     0.00     0.00  print_int_matrix3
+  0.00      2.80     0.00      653     0.00     0.00  get_first_pin
+  0.00      2.80     0.00      551     0.00     0.00  init_postscript
+  0.00      2.80     0.00      511     0.00     0.00  ezxml_open_tag
+  0.00      2.80     0.00      511     0.00     0.00  load_chan_rr_indices
+  0.00      2.80     0.00      479     0.00     0.00  alloc_sblock_pattern_lookup
+  0.00      2.80     0.00      477     0.00     0.00  add_route_tree_to_heap
+  0.00      2.80     0.00      477     0.00     0.00  alloc_and_load_edges_and_switches
+  0.00      2.80     0.00      477     0.00     0.00  free_rr_graph
+  0.00      2.80     0.00      477     0.00     0.06  get_directed_search_expected_cost
+  0.00      2.80     0.00      477     0.00     0.06  get_segment_usage_stats
+  0.00      2.80     0.00      477     0.00     0.00  watch_edges
+  0.00      2.80     0.00      445     0.00     0.00  compute_delay_lookup_tables
+  0.00      2.80     0.00      415     0.00     0.00  check_netlist
+  0.00      2.80     0.00      254     0.00     0.00  load_sblock_pattern_lookup
+  0.00      2.80     0.00      183     0.00     0.00  update_message
+  0.00      2.80     0.00      144     0.00     0.00  check_node
+  0.00      2.80     0.00      140     0.00     0.00  place_and_route
+  0.00      2.80     0.00      139     0.00     0.00  post_place_sync
+  0.00      2.80     0.00      138     0.00     0.00  ezxml_parse_str
+  0.00      2.80     0.00      138     0.00     0.00  init_chan
+  0.00      2.80     0.00      125     0.00     0.00  update_region_occ
+  0.00      2.80     0.00      122     0.00     0.00  alloc_and_load_timing_graph_levels
+  0.00      2.80     0.00      110     0.00     0.00  insert_in_edge_list
+  0.00      2.80     0.00       57     0.00     0.00  free_ivec_vector
+  0.00      2.80     0.00       43     0.00     0.00  event_loop
+  0.00      2.80     0.00       33     0.00     0.00  update_bb
+  0.00      2.80     0.00       18     0.00     0.00  alloc_route_structs
+  0.00      2.80     0.00        5     0.00     0.00  count_routing_transistors
+  0.00      2.80     0.00        5     0.00     0.00  free_matrix3
+  0.00      2.80     0.00        5     0.00     0.00  init_draw_coords
+  0.00      2.80     0.00        5     0.00     0.00  insert_in_int_list
+  0.00      2.80     0.00        4     0.00     0.00  drawroute
+  0.00      2.80     0.00        4     0.00     2.53  get_unidir_track_to_chan_seg
+  0.00      2.80     0.00        4     0.00     0.00  highlight_blocks
+  0.00      2.80     0.00        3     0.00     0.00  alloc_matrix3
+  0.00      2.80     0.00        3     0.00     0.00  drawplace
+  0.00      2.80     0.00        3     0.00     0.00  ezxml_decode
+  0.00      2.80     0.00        3     0.00     0.04  get_track_to_tracks
+  0.00      2.80     0.00        3     0.00     0.00  load_rr_indexed_data_T_values
+  0.00      2.80     0.00        3     0.00     0.00  print_relative_pos_distr
+  0.00      2.80     0.00        3     0.00     0.00  try_timing_driven_route
+  0.00      2.80     0.00        2     0.00     0.00  draw_rr_chanx
+  0.00      2.80     0.00        2     0.00     0.00  draw_rr_chany
+  0.00      2.80     0.00        2     0.00     0.00  draw_rr_edges
+  0.00      2.80     0.00        2     0.00     0.00  ezxml_toxml
+  0.00      2.80     0.00        2     0.00     0.00  ezxml_toxml_r
+  0.00      2.80     0.00        2     0.00     0.00  free_matrix4
+  0.00      2.80     0.00        2     0.00     0.00  free_route_tree_timing_structs
+  0.00      2.80     0.00        2     0.00     0.08  is_sbox
+  0.00      2.80     0.00        2     0.00     0.00  my_atoi
+  0.00      2.80     0.00        2     0.00     0.00  restore_routing
+  0.00      2.80     0.00        2     0.00     0.00  update_screen
+  0.00      2.80     0.00        2     0.00     0.00  update_transform
+  0.00      2.80     0.00        1     0.00     0.00  CheckOptions
+  0.00      2.80     0.00        1     0.00     0.00  SetupVPR
+  0.00      2.80     0.00        1     0.00     0.00  alloc_and_load_rr_node_indices
+  0.00      2.80     0.00        1     0.00     0.00  alloc_hash_table
+  0.00      2.80     0.00        1     0.00     0.00  alloc_lookups_and_criticalities
+  0.00      2.80     0.00        1     0.00     0.00  check_route
+  0.00      2.80     0.00        1     0.00     0.00  draw_chanx_to_chanx_edge
+  0.00      2.80     0.00        1     0.00     0.00  draw_rr_pin
+  0.00      2.80     0.00        1     0.00     0.00  draw_x
+  0.00      2.80     0.00        1     0.00     0.00  drawarc
+  0.00      2.80     0.00        1     0.00     0.00  drawbut
+  0.00      2.80     0.00        1     0.00     0.00  ezxml_internal_dtd
+  0.00      2.80     0.00        1     0.00     0.00  fillarc
+  0.00      2.80     0.00        1     0.00     0.00  frame_dummy
+  0.00      2.80     0.00        1     0.00     0.00  free_route_structs
+  0.00      2.80     0.00        1     0.00     0.00  get_block_center
+  0.00      2.80     0.00        1     0.00     0.00  get_track_to_ipins
+  0.00      2.80     0.00        1     0.00     0.00  init_graphics
+  0.00      2.80     0.00        1     0.00     0.00  map_button
+  0.00      2.80     0.00        1     0.00     0.00  my_strncpy
+  0.00      2.80     0.00        1     0.00     0.00  my_strtok
+  0.00      2.80     0.00        1     0.00     0.00  print_critical_path
+  0.00      2.80     0.00        1     0.00     0.00  print_lambda
+  0.00      2.80     0.00        1     0.00     0.00  print_sink_delays
+  0.00      2.80     0.00        1     0.00     0.00  read_user_pad_loc
+  0.00      2.80     0.00        1     0.00     0.00  rect_off_screen
+  0.00      2.80     0.00        1     0.00     0.00  routing_stats
+  0.00      2.80     0.00        1     0.00     0.00  update_ps_transform
+  0.00      2.80     0.00        1     0.00     0.00  zoom_in
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2014 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.36% of 2.80 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     85.4    2.34    0.05                 etext [1]
+                0.00    0.03     477/477         get_segment_usage_stats [6]
+                0.01    0.00     124/124         comp_td_point_to_point_delay [18]
+                0.01    0.00 3660932/3673043     read_netlist <cycle 2> [16]
+                0.00    0.00       2/3           get_track_to_tracks [43]
+                0.00    0.00     477/479         alloc_sblock_pattern_lookup [51]
+                0.00    0.00       1/1           print_lambda [54]
+                0.00    0.00       3/3           try_timing_driven_route [60]
+                0.00    0.00       1/446075      timing_driven_route_net [27]
+                0.00    0.00 61851104/61852301     _fini [339]
+                0.00    0.00    2249/387786      my_chunk_malloc [62]
+                0.00    0.00     653/653         get_first_pin [78]
+                0.00    0.00     511/511         load_chan_rr_indices [81]
+                0.00    0.00     511/6904        alloc_ivector_and_copy_int_list [72]
+                0.00    0.00     445/445         compute_delay_lookup_tables [85]
+                0.00    0.00     125/125         update_region_occ [92]
+                0.00    0.00     120/551         init_postscript [79]
+                0.00    0.00      12/867         print_int_matrix3 [77]
+                0.00    0.00       2/2           restore_routing [117]
+                0.00    0.00       2/3           ezxml_decode [107]
+                0.00    0.00       1/5614        my_fgets [73]
+                0.00    0.00       1/1           ezxml_internal_dtd [130]
+                0.00    0.00       1/1           alloc_and_load_rr_node_indices [121]
+                0.00    0.00       1/1           routing_stats [144]
+                0.00    0.00       1/955         get_timing_driven_expected_cost [75]
+                0.00    0.00       1/2           free_route_tree_timing_structs [115]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]      6.0    0.04    0.13                 CountTokens [2]
+                0.08    0.00 18096672/18254940     load_rc_tree_T [4]
+                0.05    0.00 18096672/18463104     print_place [5]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]      5.7    0.16    0.00                 load_rc_tree_C [3]
+-----------------------------------------------
+                0.00    0.00   14520/18254940     load_sblock_pattern_lookup [39]
+                0.00    0.00   14520/18254940     seg_index_of_sblock [41]
+                0.00    0.00   58080/18254940     ReadLineTokens [11]
+                0.00    0.00   71148/18254940     alloc_and_load_timing_graph <cycle 1> [12]
+                0.08    0.00 18096672/18254940     CountTokens [2]
+[4]      2.9    0.08    0.00 18254940         load_rc_tree_T [4]
+-----------------------------------------------
+                0.00    0.00   14520/18463104     load_sblock_pattern_lookup [39]
+                0.00    0.00   14520/18463104     seg_index_of_cblock [47]
+                0.00    0.00   29040/18463104     print_net_delay [45]
+                0.00    0.00   58080/18463104     ReadLineTokens [11]
+                0.00    0.00   84216/18463104     alloc_and_load_timing_graph <cycle 1> [12]
+                0.00    0.00  166056/18463104     load_net_slack <cycle 1> [36]
+                0.05    0.00 18096672/18463104     CountTokens [2]
+[5]      1.8    0.05    0.00 18463104         print_place [5]
+-----------------------------------------------
+                0.00    0.03     477/477         etext [1]
+[6]      1.1    0.00    0.03     477         get_segment_usage_stats [6]
+                0.00    0.03     477/477         get_directed_search_expected_cost [7]
+                0.00    0.00     954/10210       alloc_and_load_pin_to_track_map [17]
+                0.00    0.00     477/262990      update_route_tree [23]
+                0.00    0.00     954/446075      timing_driven_route_net [27]
+                0.00    0.00     477/955         get_timing_driven_expected_cost [75]
+                0.00    0.00     477/21562       XmlReadArch [68]
+-----------------------------------------------
+                0.00    0.03     477/477         get_segment_usage_stats [6]
+[7]      1.0    0.00    0.03     477         get_directed_search_expected_cost [7]
+                0.01    0.01   20054/20054       try_directed_search_route [9]
+                0.00    0.01     954/954         build_rr_graph [26]
+                0.00    0.00   41524/262990      update_route_tree [23]
+                0.00    0.00     477/10210       alloc_and_load_pin_to_track_map [17]
+                0.00    0.00     477/446075      timing_driven_route_net [27]
+                0.00    0.00     477/477         add_route_tree_to_heap [59]
+                0.00    0.00   22942/272721      try_breadth_first_route [64]
+                0.00    0.00     477/955         get_timing_driven_expected_cost [75]
+-----------------------------------------------
+                                                 <spontaneous>
+[8]      0.7    0.02    0.00                 free_rc_tree [8]
+-----------------------------------------------
+                              222082             try_directed_search_route [9]
+                0.01    0.01   20054/20054       get_directed_search_expected_cost [7]
+[9]      0.7    0.01    0.01   20054+222082  try_directed_search_route [9]
+                0.00    0.01  444641/446075      timing_driven_route_net [27]
+                0.00    0.00  217602/217602      get_mst_of_net [65]
+                              222082             try_directed_search_route [9]
+-----------------------------------------------
+[10]     0.4    0.01    0.00 1405832+173844  <cycle 1 as a whole> [10]
+                0.01    0.00 1413620+78882       alloc_and_load_timing_graph <cycle 1> [12]
+                0.00    0.00  166056             load_net_slack <cycle 1> [36]
+-----------------------------------------------
+                0.00    0.00     440/13508       check_timing_graph [38]
+                0.00    0.00    2376/13508       sync_nets_to_blocks [31]
+                0.01    0.00   10692/13508       sync_grid_to_blocks [25]
+[11]     0.4    0.01    0.00   13508         ReadLineTokens [11]
+                0.00    0.00   58080/1405832     load_net_slack <cycle 1> [36]
+                0.00    0.00   58080/18254940     load_rc_tree_T [4]
+                0.00    0.00   58080/18463104     print_place [5]
+                0.00    0.00     440/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                               78882             alloc_and_load_timing_graph <cycle 1> [12]
+                               65868             load_net_slack <cycle 1> [36]
+                0.00    0.00       1/1405832     free_rr_node_indices [28]
+                0.00    0.00       1/1405832     get_track_to_tracks [43]
+                0.00    0.00     528/1405832     SetupVPR [53]
+                0.00    0.00     956/1405832     alloc_sblock_pattern_lookup [51]
+                0.00    0.00    1120/1405832     check_rr_graph [34]
+                0.00    0.00    7260/1405832     free_switch_block_conn [46]
+                0.00    0.00   15246/1405832     seg_index_of_sblock [41]
+                0.00    0.00   21054/1405832     get_simple_switch_block_track [37]
+                0.00    0.00   23232/1405832     load_sblock_pattern_lookup [39]
+                0.00    0.00   28314/1405832     add_rr_graph_C_from_switches [40]
+                0.00    0.00   73920/1405832     load_net_delay_from_routing [35]
+                0.01    0.00 1176120/1405832     get_class_range_for_block [24]
+[12]     0.4    0.01    0.00 1413620+78882   alloc_and_load_timing_graph <cycle 1> [12]
+                0.00    0.00   71148/18254940     load_rc_tree_T [4]
+                0.00    0.00   84216/18463104     print_place [5]
+                0.00    0.00   29040/29040       print_net_delay [45]
+                0.00    0.00   78880/385328      ProcessOption [63]
+                0.00    0.00   58080/58080       allocate_and_load_critical_path [67]
+                0.00    0.00     551/387786      my_chunk_malloc [62]
+                              107976             load_net_slack <cycle 1> [36]
+                               78882             alloc_and_load_timing_graph <cycle 1> [12]
+-----------------------------------------------
+                0.00    0.00       1/4           get_unidir_opin_connections [29]
+                0.00    0.01       3/4           free_rr_node_indices [28]
+[13]     0.4    0.00    0.01       4         get_unidir_track_to_chan_seg [13]
+                0.01    0.00       1/1           alloc_and_load_grid [20]
+                0.00    0.00       1/2           is_sbox [42]
+                0.00    0.00       1/3           get_track_to_tracks [43]
+                0.00    0.00       1/1           SetupVPR [53]
+                0.00    0.00       2/479         alloc_sblock_pattern_lookup [51]
+                0.00    0.00       3/387786      my_chunk_malloc [62]
+                0.00    0.00       1/1           get_track_to_ipins [135]
+-----------------------------------------------
+                                   2             ezxml_str2utf8 [14]
+[14]     0.4    0.00    0.01       0+2       ezxml_str2utf8 [14]
+                0.01    0.00       2/2           try_swap [19]
+                0.00    0.00       2/2           ezxml_toxml [55]
+                0.00    0.00     511/6904        alloc_ivector_and_copy_int_list [72]
+                0.00    0.00     141/387786      my_chunk_malloc [62]
+                0.00    0.00       2/2           ezxml_toxml_r [113]
+                                   2             ezxml_str2utf8 [14]
+-----------------------------------------------
+[15]     0.4    0.01    0.00 3673043+3109    <cycle 2 as a whole> [15]
+                0.01    0.00 3660941             read_netlist <cycle 2> [16]
+                0.00    0.00   14781+81          try_place <cycle 2> [71]
+                0.00    0.00     415             check_netlist <cycle 2> [86]
+                0.00    0.00       4             highlight_blocks <cycle 2> [104]
+                0.00    0.00       4             drawroute <cycle 2> [103]
+                0.00    0.00       1+2           init_graphics <cycle 2> [136]
+                0.00    0.00       2             draw_rr_edges <cycle 2> [112]
+                0.00    0.00       2             update_transform <cycle 2> [119]
+                0.00    0.00       2             update_screen <cycle 2> [118]
+-----------------------------------------------
+                                   2             try_place <cycle 2> [71]
+                0.00    0.00       2/3673043     trans_per_buf [61]
+                0.00    0.00       5/3673043     is_sbox [42]
+                0.01    0.00 3660932/3673043     etext [1]
+[16]     0.4    0.01    0.00 3660941         read_netlist <cycle 2> [16]
+                0.00    0.00     649/1359        free_chunk_memory [74]
+                0.00    0.00     520/387786      my_chunk_malloc [62]
+                0.00    0.00       1/2           my_atoi [116]
+                                1629             try_place <cycle 2> [71]
+                                 414             check_netlist <cycle 2> [86]
+-----------------------------------------------
+                                9254             alloc_and_load_pin_to_track_map [17]
+                0.00    0.00       2/10210       print_lambda [54]
+                0.00    0.00     477/10210       get_directed_search_expected_cost [7]
+                0.00    0.00     954/10210       get_segment_usage_stats [6]
+                0.01    0.00    8777/10210       build_rr_graph [26]
+[17]     0.4    0.01    0.00   10210+9254    alloc_and_load_pin_to_track_map [17]
+                0.00    0.00     477/477         free_rr_graph [83]
+                0.00    0.00     477/477         watch_edges [84]
+                0.00    0.00     477/477         alloc_and_load_edges_and_switches [82]
+                0.00    0.00      30/387786      my_chunk_malloc [62]
+                                9254             alloc_and_load_pin_to_track_map [17]
+-----------------------------------------------
+                0.01    0.00     124/124         etext [1]
+[18]     0.4    0.01    0.00     124         comp_td_point_to_point_delay [18]
+-----------------------------------------------
+                                 125             try_swap [19]
+                0.01    0.00       2/2           ezxml_str2utf8 [14]
+[19]     0.4    0.01    0.00       2+125     try_swap [19]
+                0.00    0.00    5604/5614        my_fgets [73]
+                0.00    0.00      57/57          free_ivec_vector [95]
+                0.00    0.00       2/387786      my_chunk_malloc [62]
+                0.00    0.00       1/5           insert_in_int_list [102]
+                0.00    0.00       1/1           my_strtok [139]
+                                 125             try_swap [19]
+-----------------------------------------------
+                0.01    0.00       1/1           get_unidir_track_to_chan_seg [13]
+[20]     0.4    0.01    0.00       1         alloc_and_load_grid [20]
+                0.00    0.00  144748/385328      ProcessOption [63]
+                0.00    0.00       3/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                                                 <spontaneous>
+[21]     0.4    0.01    0.00                 comp_td_costs [21]
+-----------------------------------------------
+                                                 <spontaneous>
+[22]     0.4    0.01    0.00                 load_one_fb_fanout_count [22]
+                0.00    0.00   30888/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                0.00    0.00     477/262990      get_segment_usage_stats [6]
+                0.00    0.00   41524/262990      get_directed_search_expected_cost [7]
+                0.01    0.00  220989/262990      timing_driven_route_net [27]
+[23]     0.4    0.01    0.00  262990         update_route_tree [23]
+                0.00    0.00   19536/272721      try_breadth_first_route [64]
+                0.00    0.00       4/5           insert_in_int_list [102]
+-----------------------------------------------
+                                                 <spontaneous>
+[24]     0.3    0.00    0.01                 get_class_range_for_block [24]
+                0.01    0.00 1176120/1405832     alloc_and_load_timing_graph <cycle 1> [12]
+-----------------------------------------------
+                                                 <spontaneous>
+[25]     0.3    0.00    0.01                 sync_grid_to_blocks [25]
+                0.01    0.00   10692/13508       ReadLineTokens [11]
+                0.00    0.00   10956/385328      ProcessOption [63]
+-----------------------------------------------
+                                4150             build_rr_graph [26]
+                0.00    0.01     954/954         get_directed_search_expected_cost [7]
+[26]     0.3    0.00    0.01     954+4150    build_rr_graph [26]
+                0.01    0.00    8777/10210       alloc_and_load_pin_to_track_map [17]
+                                4150             build_rr_graph [26]
+-----------------------------------------------
+                                   1             timing_driven_route_net [27]
+                0.00    0.00       1/446075      add_route_tree_to_heap [59]
+                0.00    0.00       1/446075      try_timing_driven_route [60]
+                0.00    0.00       1/446075      etext [1]
+                0.00    0.00     477/446075      get_directed_search_expected_cost [7]
+                0.00    0.00     954/446075      get_segment_usage_stats [6]
+                0.00    0.01  444641/446075      try_directed_search_route [9]
+[27]     0.3    0.00    0.01  446075+1       timing_driven_route_net [27]
+                0.01    0.00  220989/262990      update_route_tree [23]
+                0.00    0.00       2/3673043     try_place <cycle 2> [71]
+                0.00    0.00  225616/272721      try_breadth_first_route [64]
+                0.00    0.00       7/387786      my_chunk_malloc [62]
+                                   1             timing_driven_route_net [27]
+-----------------------------------------------
+                                                 <spontaneous>
+[28]     0.3    0.00    0.01                 free_rr_node_indices [28]
+                0.00    0.01       3/4           get_unidir_track_to_chan_seg [13]
+                0.00    0.00       1/1405832     alloc_and_load_timing_graph <cycle 1> [12]
+                0.00    0.00       2/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                                                 <spontaneous>
+[29]     0.1    0.00    0.00                 get_unidir_opin_connections [29]
+                0.00    0.00       1/4           get_unidir_track_to_chan_seg [13]
+                0.00    0.00       2/867         print_int_matrix3 [77]
+                0.00    0.00       1/1           CheckOptions [120]
+                0.00    0.00       1/1           read_user_pad_loc [142]
+                0.00    0.00       1/122         alloc_and_load_timing_graph_levels [93]
+-----------------------------------------------
+                0.00    0.00   32934/65868       load_timing_graph_net_delays [33]
+                0.00    0.00   32934/65868       free_timing_graph [32]
+[30]     0.1    0.00    0.00   65868         print_timing_graph [30]
+                0.00    0.00   30888/30888       sync_nets_to_blocks [31]
+                0.00    0.00   34980/68548       FreeTokens [66]
+-----------------------------------------------
+                0.00    0.00   30888/30888       print_timing_graph [30]
+[31]     0.1    0.00    0.00   30888         sync_nets_to_blocks [31]
+                0.00    0.00    2376/13508       ReadLineTokens [11]
+-----------------------------------------------
+                                                 <spontaneous>
+[32]     0.0    0.00    0.00                 free_timing_graph [32]
+                0.00    0.00   32934/65868       print_timing_graph [30]
+-----------------------------------------------
+                                                 <spontaneous>
+[33]     0.0    0.00    0.00                 load_timing_graph_net_delays [33]
+                0.00    0.00   32934/65868       print_timing_graph [30]
+-----------------------------------------------
+                                                 <spontaneous>
+[34]     0.0    0.00    0.00                 check_rr_graph [34]
+                0.00    0.00    1120/1120        load_net_delay_from_routing [35]
+                0.00    0.00    1120/9106        add_rr_graph_C_from_switches [40]
+                0.00    0.00    1120/1405832     alloc_and_load_timing_graph <cycle 1> [12]
+-----------------------------------------------
+                0.00    0.00    1120/1120        check_rr_graph [34]
+[35]     0.0    0.00    0.00    1120         load_net_delay_from_routing [35]
+                0.00    0.00   73920/1405832     alloc_and_load_timing_graph <cycle 1> [12]
+                0.00    0.00   36960/385328      ProcessOption [63]
+                0.00    0.00    2240/68548       FreeTokens [66]
+-----------------------------------------------
+                              107976             alloc_and_load_timing_graph <cycle 1> [12]
+                0.00    0.00   58080/1405832     ReadLineTokens [11]
+[36]     0.0    0.00    0.00  166056         load_net_slack <cycle 1> [36]
+                0.00    0.00  166056/18463104     print_place [5]
+                0.00    0.00   65868/385328      ProcessOption [63]
+                               65868             alloc_and_load_timing_graph <cycle 1> [12]
+-----------------------------------------------
+                                                 <spontaneous>
+[37]     0.0    0.00    0.00                 get_simple_switch_block_track [37]
+                0.00    0.00    7986/9106        add_rr_graph_C_from_switches [40]
+                0.00    0.00   21054/1405832     alloc_and_load_timing_graph <cycle 1> [12]
+-----------------------------------------------
+                                                 <spontaneous>
+[38]     0.0    0.00    0.00                 check_timing_graph [38]
+                0.00    0.00     440/13508       ReadLineTokens [11]
+                0.00    0.00     440/68548       FreeTokens [66]
+-----------------------------------------------
+                0.00    0.00     110/254         get_track_to_tracks [43]
+                0.00    0.00     144/254         is_sbox [42]
+[39]     0.0    0.00    0.00     254         load_sblock_pattern_lookup [39]
+                0.00    0.00   23232/1405832     alloc_and_load_timing_graph <cycle 1> [12]
+                0.00    0.00   14520/18254940     load_rc_tree_T [4]
+                0.00    0.00   14520/18463104     print_place [5]
+                0.00    0.00    5520/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                                7986             add_rr_graph_C_from_switches [40]
+                0.00    0.00    1120/9106        check_rr_graph [34]
+                0.00    0.00    7986/9106        get_simple_switch_block_track [37]
+[40]     0.0    0.00    0.00    9106+7986    add_rr_graph_C_from_switches [40]
+                0.00    0.00   28314/1405832     alloc_and_load_timing_graph <cycle 1> [12]
+                                7986             add_rr_graph_C_from_switches [40]
+-----------------------------------------------
+                                                 <spontaneous>
+[41]     0.0    0.00    0.00                 seg_index_of_sblock [41]
+                0.00    0.00   15246/1405832     alloc_and_load_timing_graph <cycle 1> [12]
+                0.00    0.00   14520/18254940     load_rc_tree_T [4]
+-----------------------------------------------
+                0.00    0.00       1/2           get_bidir_opin_connections [44]
+                0.00    0.00       1/2           get_unidir_track_to_chan_seg [13]
+[42]     0.0    0.00    0.00       2         is_sbox [42]
+                0.00    0.00     144/254         load_sblock_pattern_lookup [39]
+                0.00    0.00       5/3673043     read_netlist <cycle 2> [16]
+                0.00    0.00     144/144         check_node [88]
+                0.00    0.00       1/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                0.00    0.00       1/3           get_unidir_track_to_chan_seg [13]
+                0.00    0.00       2/3           etext [1]
+[43]     0.0    0.00    0.00       3         get_track_to_tracks [43]
+                0.00    0.00     110/254         load_sblock_pattern_lookup [39]
+                0.00    0.00       1/1405832     alloc_and_load_timing_graph <cycle 1> [12]
+                0.00    0.00     110/110         insert_in_edge_list [94]
+                0.00    0.00       1/5614        my_fgets [73]
+                0.00    0.00       1/387786      my_chunk_malloc [62]
+                0.00    0.00       1/6904        alloc_ivector_and_copy_int_list [72]
+-----------------------------------------------
+                                                 <spontaneous>
+[44]     0.0    0.00    0.00                 get_bidir_opin_connections [44]
+                0.00    0.00       1/2           is_sbox [42]
+                0.00    0.00       3/5           count_routing_transistors [99]
+-----------------------------------------------
+                0.00    0.00   29040/29040       alloc_and_load_timing_graph <cycle 1> [12]
+[45]     0.0    0.00    0.00   29040         print_net_delay [45]
+                0.00    0.00   29040/18463104     print_place [5]
+-----------------------------------------------
+                                                 <spontaneous>
+[46]     0.0    0.00    0.00                 free_switch_block_conn [46]
+                0.00    0.00    7260/1405832     alloc_and_load_timing_graph <cycle 1> [12]
+-----------------------------------------------
+                                                 <spontaneous>
+[47]     0.0    0.00    0.00                 seg_index_of_cblock [47]
+                0.00    0.00   14520/18463104     print_place [5]
+-----------------------------------------------
+                                                 <spontaneous>
+[48]     0.0    0.00    0.00                 print_netlist [48]
+                0.00    0.00    6741/3673043     try_place <cycle 2> [71]
+                0.00    0.00    5024/387786      my_chunk_malloc [62]
+                0.00    0.00     703/1359        free_chunk_memory [74]
+-----------------------------------------------
+                                5018             place_and_route [49]
+                0.00    0.00       1/140         main [58]
+                0.00    0.00     139/140         comp_width [50]
+[49]     0.0    0.00    0.00     140+5018    place_and_route [49]
+                0.00    0.00    3380/3673043     try_place <cycle 2> [71]
+                0.00    0.00       1/387786      my_chunk_malloc [62]
+                0.00    0.00       1/61852301     _fini [339]
+                0.00    0.00       1/3           ezxml_decode [107]
+                0.00    0.00       1/1           free_route_structs [133]
+                                5018             place_and_route [49]
+-----------------------------------------------
+                                 511             comp_width [50]
+[50]     0.0    0.00    0.00       0+511     comp_width [50]
+                0.00    0.00     139/140         place_and_route [49]
+                0.00    0.00     139/139         post_place_sync [89]
+                0.00    0.00     138/138         init_chan [91]
+                0.00    0.00       1/21562       XmlReadArch [68]
+                0.00    0.00       1/867         print_int_matrix3 [77]
+                                 511             comp_width [50]
+-----------------------------------------------
+                0.00    0.00       2/479         get_unidir_track_to_chan_seg [13]
+                0.00    0.00     477/479         etext [1]
+[51]     0.0    0.00    0.00     479         alloc_sblock_pattern_lookup [51]
+                0.00    0.00     956/1405832     alloc_and_load_timing_graph <cycle 1> [12]
+                0.00    0.00       2/3673043     try_place <cycle 2> [71]
+                0.00    0.00       1/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                                                 <spontaneous>
+[52]     0.0    0.00    0.00                 ezxml_free [52]
+                0.00    0.00    1724/3673043     try_place <cycle 2> [71]
+                0.00    0.00    1213/6904        alloc_ivector_and_copy_int_list [72]
+                0.00    0.00     511/511         ezxml_open_tag [80]
+-----------------------------------------------
+                                   4             SetupVPR [53]
+                0.00    0.00       1/1           get_unidir_track_to_chan_seg [13]
+[53]     0.0    0.00    0.00       1+4       SetupVPR [53]
+                0.00    0.00     528/1405832     alloc_and_load_timing_graph <cycle 1> [12]
+                0.00    0.00       7/387786      my_chunk_malloc [62]
+                                   4             SetupVPR [53]
+-----------------------------------------------
+                                   1             print_lambda [54]
+                0.00    0.00       1/1           etext [1]
+[54]     0.0    0.00    0.00       1+1       print_lambda [54]
+                0.00    0.00       2/10210       alloc_and_load_pin_to_track_map [17]
+                0.00    0.00       3/387786      my_chunk_malloc [62]
+                                   1             print_lambda [54]
+-----------------------------------------------
+                                 138             ezxml_toxml [55]
+                0.00    0.00       2/2           ezxml_str2utf8 [14]
+[55]     0.0    0.00    0.00       2+138     ezxml_toxml [55]
+                0.00    0.00     138/3673043     try_place <cycle 2> [71]
+                0.00    0.00     276/867         print_int_matrix3 [77]
+                0.00    0.00     141/387786      my_chunk_malloc [62]
+                0.00    0.00     138/138         ezxml_parse_str [90]
+                                 138             ezxml_toxml [55]
+-----------------------------------------------
+                                                 <spontaneous>
+[56]     0.0    0.00    0.00                 alloc_draw_structs [56]
+                0.00    0.00      74/3673043     try_place <cycle 2> [71]
+                0.00    0.00      74/900         draw_pin_to_chan_edge [76]
+-----------------------------------------------
+                                                 <spontaneous>
+[57]     0.0    0.00    0.00                 get_track_num [57]
+                0.00    0.00      41/3673043     try_place <cycle 2> [71]
+-----------------------------------------------
+                                                 <spontaneous>
+[58]     0.0    0.00    0.00                 main [58]
+                0.00    0.00       1/140         place_and_route [49]
+                0.00    0.00       2/3673043     try_place <cycle 2> [71]
+                0.00    0.00       2/3           drawplace [106]
+                0.00    0.00       1/1           frame_dummy [132]
+                0.00    0.00       1/1           draw_chanx_to_chanx_edge [125]
+                0.00    0.00       1/19635       draw_chany_to_chany_edge [70]
+                0.00    0.00       1/1           draw_rr_pin [126]
+                0.00    0.00       1/61852301     _fini [339]
+                0.00    0.00       1/1           my_strncpy [138]
+-----------------------------------------------
+                0.00    0.00     477/477         get_directed_search_expected_cost [7]
+[59]     0.0    0.00    0.00     477         add_route_tree_to_heap [59]
+                0.00    0.00       1/446075      timing_driven_route_net [27]
+                0.00    0.00       1/2           free_route_tree_timing_structs [115]
+-----------------------------------------------
+                0.00    0.00       3/3           etext [1]
+[60]     0.0    0.00    0.00       3         try_timing_driven_route [60]
+                0.00    0.00       1/446075      timing_driven_route_net [27]
+                0.00    0.00       2/387786      my_chunk_malloc [62]
+                0.00    0.00       2/3           alloc_matrix3 [105]
+-----------------------------------------------
+                                   2             trans_per_buf [61]
+[61]     0.0    0.00    0.00       0+2       trans_per_buf [61]
+                0.00    0.00       2/3673043     read_netlist <cycle 2> [16]
+                0.00    0.00       4/867         print_int_matrix3 [77]
+                0.00    0.00       2/5           count_routing_transistors [99]
+                                   2             trans_per_buf [61]
+-----------------------------------------------
+                0.00    0.00       1/387786      check_netlist <cycle 2> [86]
+                0.00    0.00       1/387786      place_and_route [49]
+                0.00    0.00       1/387786      load_rt_subtree_Tdel [287]
+                0.00    0.00       1/387786      is_sbox [42]
+                0.00    0.00       1/387786      get_track_to_tracks [43]
+                0.00    0.00       1/387786      alloc_sblock_pattern_lookup [51]
+                0.00    0.00       1/387786      insert_in_hash_table [275]
+                0.00    0.00       1/387786      ezxml_decode [107]
+                0.00    0.00       1/387786      print_relative_pos_distr [109]
+                0.00    0.00       1/387786      update_ps_transform [145]
+                0.00    0.00       1/387786      map_button [137]
+                0.00    0.00       1/387786      force_setcolor [232]
+                0.00    0.00       1/387786      destroy_button [191]
+                0.00    0.00       1/387786      fillrect [230]
+                0.00    0.00       1/387786      drawarc [128]
+                0.00    0.00       1/387786      fillarc [131]
+                0.00    0.00       2/387786      try_timing_driven_route [60]
+                0.00    0.00       2/387786      free_rr_node_indices [28]
+                0.00    0.00       2/387786      get_rr_node_index [262]
+                0.00    0.00       2/387786      free_sblock_pattern_lookup [248]
+                0.00    0.00       2/387786      check_route [124]
+                0.00    0.00       2/387786      try_swap [19]
+                0.00    0.00       2/387786      redraw_screen [313]
+                0.00    0.00       2/387786      init_draw_coords [101]
+                0.00    0.00       2/387786      test_if_exposed [325]
+                0.00    0.00       3/387786      print_lambda [54]
+                0.00    0.00       3/387786      get_unidir_track_to_chan_seg [13]
+                0.00    0.00       3/387786      alloc_and_load_grid [20]
+                0.00    0.00       3/387786      CheckOptions [120]
+                0.00    0.00       3/387786      highlight_blocks <cycle 2> [104]
+                0.00    0.00       3/387786      update_transform <cycle 2> [119]
+                0.00    0.00       3/387786      force_setfontsize [233]
+                0.00    0.00       3/387786      setpoly.constprop.8 [323]
+                0.00    0.00       3/387786      setfontsize [320]
+                0.00    0.00       3/387786      create_button [187]
+                0.00    0.00       4/387786      update_screen <cycle 2> [118]
+                0.00    0.00       5/387786      print_critical_path [140]
+                0.00    0.00       6/387786      alloc_ivector_and_copy_int_list [72]
+                0.00    0.00       6/387786      my_fgets [73]
+                0.00    0.00       6/387786      alloc_and_load_rr_indexed_data [169]
+                0.00    0.00       7/387786      timing_driven_route_net [27]
+                0.00    0.00       7/387786      SetupVPR [53]
+                0.00    0.00       8/387786      init_graphics <cycle 2> [136]
+                0.00    0.00      12/387786      try_breadth_first_route [64]
+                0.00    0.00      30/387786      alloc_and_load_pin_to_track_map [17]
+                0.00    0.00      56/387786      alloc_matrix [173]
+                0.00    0.00      86/387786      free_matrix4 [114]
+                0.00    0.00     135/387786      drawroute <cycle 2> [103]
+                0.00    0.00     138/387786      ezxml_parse_str [90]
+                0.00    0.00     140/387786      ezxml_toxml_r [113]
+                0.00    0.00     141/387786      ezxml_str2utf8 [14]
+                0.00    0.00     141/387786      ezxml_toxml [55]
+                0.00    0.00     153/387786      draw_rr_edges <cycle 2> [112]
+                0.00    0.00     168/387786      my_irand [292]
+                0.00    0.00     189/387786      drawplace [106]
+                0.00    0.00     264/387786      read_place [312]
+                0.00    0.00     272/387786      free_matrix3 [100]
+                0.00    0.00     276/387786      free_ivec_matrix3 [240]
+                0.00    0.00     348/387786      draw_pin_to_chan_edge [76]
+                0.00    0.00     440/387786      ReadLineTokens [11]
+                0.00    0.00     520/387786      read_netlist <cycle 2> [16]
+                0.00    0.00     551/387786      alloc_and_load_timing_graph <cycle 1> [12]
+                0.00    0.00     867/387786      my_strtok [139]
+                0.00    0.00     934/387786      count_routing_transistors [99]
+                0.00    0.00    1022/387786      load_chan_rr_indices [81]
+                0.00    0.00    1300/387786      XmlReadArch [68]
+                0.00    0.00    1359/387786      insert_in_vptr_list [276]
+                0.00    0.00    2249/387786      etext [1]
+                0.00    0.00    2298/387786      ezxml_ampencode [205]
+                0.00    0.00    3079/387786      print_int_matrix3 [77]
+                0.00    0.00    5024/387786      print_netlist [48]
+                0.00    0.00    5520/387786      load_sblock_pattern_lookup [39]
+                0.00    0.00    7673/387786      try_place <cycle 2> [71]
+                0.00    0.00   30888/387786      load_one_fb_fanout_count [22]
+                0.00    0.00   34184/387786      load_rr_indexed_data_T_values [108]
+                0.00    0.00   68548/387786      FreeTokens [66]
+                0.00    0.00  218668/387786      ProcessOption [63]
+[62]     0.0    0.00    0.00  387786         my_chunk_malloc [62]
+-----------------------------------------------
+                0.00    0.00   10956/385328      print_critical_path_node [303]
+                0.00    0.00   10956/385328      sync_grid_to_blocks [25]
+                0.00    0.00   36960/385328      load_net_delay_from_routing [35]
+                0.00    0.00   36960/385328      load_constant_net_delay [283]
+                0.00    0.00   65868/385328      load_net_slack <cycle 1> [36]
+                0.00    0.00   78880/385328      alloc_and_load_timing_graph <cycle 1> [12]
+                0.00    0.00  144748/385328      alloc_and_load_grid [20]
+[63]     0.0    0.00    0.00  385328         ProcessOption [63]
+                0.00    0.00  218668/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                              198524             try_breadth_first_route [64]
+                0.00    0.00    4627/272721      alloc_timing_driven_route_structs [178]
+                0.00    0.00   19536/272721      update_route_tree [23]
+                0.00    0.00   22942/272721      get_directed_search_expected_cost [7]
+                0.00    0.00  225616/272721      timing_driven_route_net [27]
+[64]     0.0    0.00    0.00  272721+198524  try_breadth_first_route [64]
+                0.00    0.00      12/387786      my_chunk_malloc [62]
+                              198524             try_breadth_first_route [64]
+-----------------------------------------------
+                0.00    0.00  217602/217602      try_directed_search_route [9]
+[65]     0.0    0.00    0.00  217602         get_mst_of_net [65]
+-----------------------------------------------
+                0.00    0.00     440/68548       check_timing_graph [38]
+                0.00    0.00    2240/68548       load_net_delay_from_routing [35]
+                0.00    0.00   30888/68548       is_opin [280]
+                0.00    0.00   34980/68548       print_timing_graph [30]
+[66]     0.0    0.00    0.00   68548         FreeTokens [66]
+                0.00    0.00   68548/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                0.00    0.00   58080/58080       alloc_and_load_timing_graph <cycle 1> [12]
+[67]     0.0    0.00    0.00   58080         allocate_and_load_critical_path [67]
+-----------------------------------------------
+                                1603             XmlReadArch [68]
+                0.00    0.00       1/21562       comp_width [50]
+                0.00    0.00     280/21562       post_place_sync [89]
+                0.00    0.00     477/21562       get_segment_usage_stats [6]
+                0.00    0.00     512/21562       check_netlist <cycle 2> [86]
+                0.00    0.00   20292/21562       FreeNode [154]
+[68]     0.0    0.00    0.00   21562+1603    XmlReadArch [68]
+                0.00    0.00    1300/387786      my_chunk_malloc [62]
+                                1603             XmlReadArch [68]
+-----------------------------------------------
+                0.00    0.00     220/20512       FreeNode [154]
+                0.00    0.00   20292/20512       CheckOptions [120]
+[69]     0.0    0.00    0.00   20512         ProcessChanWidthDistrDir [69]
+-----------------------------------------------
+                                   2             draw_chany_to_chany_edge [70]
+                0.00    0.00       1/19635       main [58]
+                0.00    0.00   19634/19635       draw_pin_to_chan_edge [76]
+[70]     0.0    0.00    0.00   19635+2       draw_chany_to_chany_edge [70]
+                                   2             draw_chany_to_chany_edge [70]
+-----------------------------------------------
+                                  81             try_place <cycle 2> [71]
+                                  12             drawroute <cycle 2> [103]
+                                  41             draw_rr_edges <cycle 2> [112]
+                                  52             highlight_blocks <cycle 2> [104]
+                                 114             update_screen <cycle 2> [118]
+                                 829             check_netlist <cycle 2> [86]
+                                1629             read_netlist <cycle 2> [16]
+                0.00    0.00       2/3673043     timing_driven_route_net [27]
+                0.00    0.00       2/3673043     main [58]
+                0.00    0.00       2/3673043     alloc_sblock_pattern_lookup [51]
+                0.00    0.00      41/3673043     get_track_num [57]
+                0.00    0.00      74/3673043     alloc_draw_structs [56]
+                0.00    0.00     138/3673043     ezxml_toxml [55]
+                0.00    0.00    1724/3673043     ezxml_free [52]
+                0.00    0.00    3380/3673043     place_and_route [49]
+                0.00    0.00    6741/3673043     print_netlist [48]
+[71]     0.0    0.00    0.00   14781+81      try_place <cycle 2> [71]
+                0.00    0.00    7673/387786      my_chunk_malloc [62]
+                0.00    0.00      11/867         print_int_matrix3 [77]
+                0.00    0.00       4/1359        free_chunk_memory [74]
+                0.00    0.00       3/3           print_relative_pos_distr [109]
+                0.00    0.00       1/1           draw_x [127]
+                0.00    0.00       1/1           get_block_center [134]
+                0.00    0.00       1/1           alloc_lookups_and_criticalities [123]
+                0.00    0.00       1/1           print_sink_delays [141]
+                0.00    0.00       1/3           drawplace [106]
+                                   2             read_netlist <cycle 2> [16]
+                                   1             init_graphics <cycle 2> [136]
+                                   1             check_netlist <cycle 2> [86]
+                                  81             try_place <cycle 2> [71]
+-----------------------------------------------
+                0.00    0.00       1/6904        get_track_to_tracks [43]
+                0.00    0.00       7/6904        update_bb [97]
+                0.00    0.00      30/6904        ezxml_parse_fp [221]
+                0.00    0.00     511/6904        ezxml_decode [107]
+                0.00    0.00     511/6904        ezxml_str2utf8 [14]
+                0.00    0.00     511/6904        etext [1]
+                0.00    0.00    1213/6904        ezxml_free [52]
+                0.00    0.00    1535/6904        ezxml_parse_str [90]
+                0.00    0.00    2585/6904        ezxml_set_attr [224]
+[72]     0.0    0.00    0.00    6904         alloc_ivector_and_copy_int_list [72]
+                0.00    0.00       6/387786      my_chunk_malloc [62]
+                0.00    0.00       6/5614        my_fgets [73]
+-----------------------------------------------
+                0.00    0.00       1/5614        get_track_to_tracks [43]
+                0.00    0.00       1/5614        ezxml_decode [107]
+                0.00    0.00       1/5614        update_region_occ [92]
+                0.00    0.00       1/5614        etext [1]
+                0.00    0.00       6/5614        alloc_ivector_and_copy_int_list [72]
+                0.00    0.00    5604/5614        try_swap [19]
+[73]     0.0    0.00    0.00    5614         my_fgets [73]
+                0.00    0.00       6/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                0.00    0.00       1/1359        fillarc [131]
+                0.00    0.00       2/1359        update_ps_transform [145]
+                0.00    0.00       4/1359        try_place <cycle 2> [71]
+                0.00    0.00     649/1359        read_netlist <cycle 2> [16]
+                0.00    0.00     703/1359        print_netlist [48]
+[74]     0.0    0.00    0.00    1359         free_chunk_memory [74]
+-----------------------------------------------
+                0.00    0.00       1/955         etext [1]
+                0.00    0.00     477/955         get_segment_usage_stats [6]
+                0.00    0.00     477/955         get_directed_search_expected_cost [7]
+[75]     0.0    0.00    0.00     955         get_timing_driven_expected_cost [75]
+-----------------------------------------------
+                                 181             draw_pin_to_chan_edge [76]
+                0.00    0.00       1/900         zoom_fit [337]
+                0.00    0.00       1/900         rect_off_screen [143]
+                0.00    0.00       1/900         force_setcolor [232]
+                0.00    0.00       1/900         clearscreen [183]
+                0.00    0.00       2/900         test_if_exposed [325]
+                0.00    0.00       2/900         translate_up [332]
+                0.00    0.00       2/900         translate_down [329]
+                0.00    0.00       2/900         translate_right [331]
+                0.00    0.00       2/900         map_button [137]
+                0.00    0.00       2/900         destroy_button [191]
+                0.00    0.00       2/900         drawrect [198]
+                0.00    0.00       2/900         fillrect [230]
+                0.00    0.00       2/900         drawtext [200]
+                0.00    0.00       3/900         zoom_in [146]
+                0.00    0.00       3/900         zoom_out [338]
+                0.00    0.00       3/900         translate_left [330]
+                0.00    0.00       3/900         drawline [197]
+                0.00    0.00       3/900         fillarc [131]
+                0.00    0.00       4/900         update_ps_transform [145]
+                0.00    0.00       4/900         force_setlinestyle [234]
+                0.00    0.00       5/900         drawarc [128]
+                0.00    0.00       5/900         fillpoly [229]
+                0.00    0.00       8/900         init_draw_coords [101]
+                0.00    0.00      15/900         redraw_screen [313]
+                0.00    0.00      17/900         drawbut [129]
+                0.00    0.00      20/900         update_transform <cycle 2> [119]
+                0.00    0.00      50/900         init_graphics <cycle 2> [136]
+                0.00    0.00      74/900         alloc_draw_structs [56]
+                0.00    0.00     110/900         highlight_blocks <cycle 2> [104]
+                0.00    0.00     115/900         drawroute <cycle 2> [103]
+                0.00    0.00     188/900         update_screen <cycle 2> [118]
+                0.00    0.00     248/900         draw_rr_edges <cycle 2> [112]
+[76]     0.0    0.00    0.00     900+181     draw_pin_to_chan_edge [76]
+                0.00    0.00   19634/19635       draw_chany_to_chany_edge [70]
+                0.00    0.00     633/61852301     _fini [339]
+                0.00    0.00     348/387786      my_chunk_malloc [62]
+                0.00    0.00     183/183         update_message [87]
+                0.00    0.00      41/43          event_loop [96]
+                                 181             draw_pin_to_chan_edge [76]
+-----------------------------------------------
+                0.00    0.00       1/867         check_netlist <cycle 2> [86]
+                0.00    0.00       1/867         comp_width [50]
+                0.00    0.00       2/867         get_rr_node_index [262]
+                0.00    0.00       2/867         get_unidir_opin_connections [29]
+                0.00    0.00       2/867         highlight_blocks <cycle 2> [104]
+                0.00    0.00       4/867         alloc_and_load_rr_indexed_data [169]
+                0.00    0.00       4/867         trans_per_buf [61]
+                0.00    0.00      11/867         try_place <cycle 2> [71]
+                0.00    0.00      12/867         etext [1]
+                0.00    0.00     138/867         ezxml_ampencode [205]
+                0.00    0.00     138/867         ezxml_toxml_r [113]
+                0.00    0.00     138/867         ezxml_parse_str [90]
+                0.00    0.00     138/867         update_bb [97]
+                0.00    0.00     276/867         ezxml_toxml [55]
+[77]     0.0    0.00    0.00     867         print_int_matrix3 [77]
+                0.00    0.00    3079/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                0.00    0.00     653/653         etext [1]
+[78]     0.0    0.00    0.00     653         get_first_pin [78]
+                0.00    0.00     431/551         init_postscript [79]
+                0.00    0.00     221/61852301     _fini [339]
+-----------------------------------------------
+                0.00    0.00     120/551         etext [1]
+                0.00    0.00     431/551         get_first_pin [78]
+[79]     0.0    0.00    0.00     551         init_postscript [79]
+-----------------------------------------------
+                0.00    0.00     511/511         ezxml_free [52]
+[80]     0.0    0.00    0.00     511         ezxml_open_tag [80]
+-----------------------------------------------
+                0.00    0.00     511/511         etext [1]
+[81]     0.0    0.00    0.00     511         load_chan_rr_indices [81]
+                0.00    0.00    1022/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                                3673             alloc_and_load_edges_and_switches [82]
+                0.00    0.00     477/477         alloc_and_load_pin_to_track_map [17]
+[82]     0.0    0.00    0.00     477+3673    alloc_and_load_edges_and_switches [82]
+                                3673             alloc_and_load_edges_and_switches [82]
+-----------------------------------------------
+                0.00    0.00     477/477         alloc_and_load_pin_to_track_map [17]
+[83]     0.0    0.00    0.00     477         free_rr_graph [83]
+-----------------------------------------------
+                0.00    0.00     477/477         alloc_and_load_pin_to_track_map [17]
+[84]     0.0    0.00    0.00     477         watch_edges [84]
+-----------------------------------------------
+                                   1             compute_delay_lookup_tables [85]
+                0.00    0.00     445/445         etext [1]
+[85]     0.0    0.00    0.00     445+1       compute_delay_lookup_tables [85]
+                0.00    0.00     224/61852301     _fini [339]
+                                   1             compute_delay_lookup_tables [85]
+-----------------------------------------------
+                                   1             try_place <cycle 2> [71]
+                                 414             read_netlist <cycle 2> [16]
+[86]     0.0    0.00    0.00     415         check_netlist <cycle 2> [86]
+                0.00    0.00     512/21562       XmlReadArch [68]
+                0.00    0.00       1/387786      my_chunk_malloc [62]
+                0.00    0.00       1/867         print_int_matrix3 [77]
+                                 829             try_place <cycle 2> [71]
+-----------------------------------------------
+                0.00    0.00     183/183         draw_pin_to_chan_edge [76]
+[87]     0.0    0.00    0.00     183         update_message [87]
+-----------------------------------------------
+                0.00    0.00     144/144         is_sbox [42]
+[88]     0.0    0.00    0.00     144         check_node [88]
+-----------------------------------------------
+                0.00    0.00     139/139         comp_width [50]
+[89]     0.0    0.00    0.00     139         post_place_sync [89]
+                0.00    0.00     280/21562       XmlReadArch [68]
+-----------------------------------------------
+                0.00    0.00     138/138         ezxml_toxml [55]
+[90]     0.0    0.00    0.00     138         ezxml_parse_str [90]
+                0.00    0.00    1535/6904        alloc_ivector_and_copy_int_list [72]
+                0.00    0.00     138/867         print_int_matrix3 [77]
+                0.00    0.00     138/387786      my_chunk_malloc [62]
+                0.00    0.00      33/33          update_bb [97]
+-----------------------------------------------
+                0.00    0.00     138/138         comp_width [50]
+[91]     0.0    0.00    0.00     138         init_chan [91]
+-----------------------------------------------
+                0.00    0.00     125/125         etext [1]
+[92]     0.0    0.00    0.00     125         update_region_occ [92]
+                0.00    0.00       1/5614        my_fgets [73]
+                0.00    0.00       1/3           alloc_matrix3 [105]
+-----------------------------------------------
+                0.00    0.00       1/122         get_unidir_opin_connections [29]
+                0.00    0.00     121/122         get_rr_node_index [262]
+[93]     0.0    0.00    0.00     122         alloc_and_load_timing_graph_levels [93]
+-----------------------------------------------
+                0.00    0.00     110/110         get_track_to_tracks [43]
+[94]     0.0    0.00    0.00     110         insert_in_edge_list [94]
+-----------------------------------------------
+                0.00    0.00      57/57          try_swap [19]
+[95]     0.0    0.00    0.00      57         free_ivec_vector [95]
+-----------------------------------------------
+                0.00    0.00       1/43          init_graphics <cycle 2> [136]
+                0.00    0.00       1/43          fillarc [131]
+                0.00    0.00      41/43          draw_pin_to_chan_edge [76]
+[96]     0.0    0.00    0.00      43         event_loop [96]
+-----------------------------------------------
+                0.00    0.00      33/33          ezxml_parse_str [90]
+[97]     0.0    0.00    0.00      33         update_bb [97]
+                0.00    0.00     138/867         print_int_matrix3 [77]
+                0.00    0.00       7/6904        alloc_ivector_and_copy_int_list [72]
+-----------------------------------------------
+                                  18             alloc_route_structs [98]
+                0.00    0.00      18/18          init_route_structs [272]
+[98]     0.0    0.00    0.00      18+18      alloc_route_structs [98]
+                                  18             alloc_route_structs [98]
+-----------------------------------------------
+                0.00    0.00       2/5           trans_per_buf [61]
+                0.00    0.00       3/5           get_bidir_opin_connections [44]
+[99]     0.0    0.00    0.00       5         count_routing_transistors [99]
+                0.00    0.00     934/387786      my_chunk_malloc [62]
+                0.00    0.00       2/5           free_matrix3 [100]
+-----------------------------------------------
+                0.00    0.00       1/5           force_setlinewidth [235]
+                0.00    0.00       2/5           alloc_and_load_rr_indexed_data [169]
+                0.00    0.00       2/5           count_routing_transistors [99]
+[100]    0.0    0.00    0.00       5         free_matrix3 [100]
+                0.00    0.00     272/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                0.00    0.00       1/5           force_setlinestyle [234]
+                0.00    0.00       4/5           init_graphics <cycle 2> [136]
+[101]    0.0    0.00    0.00       5         init_draw_coords [101]
+                0.00    0.00       8/900         draw_pin_to_chan_edge [76]
+                0.00    0.00       2/387786      my_chunk_malloc [62]
+                0.00    0.00       2/61852301     _fini [339]
+-----------------------------------------------
+                0.00    0.00       1/5           try_swap [19]
+                0.00    0.00       4/5           update_route_tree [23]
+[102]    0.0    0.00    0.00       5         insert_in_int_list [102]
+-----------------------------------------------
+                                   4             init_graphics <cycle 2> [136]
+[103]    0.0    0.00    0.00       4         drawroute <cycle 2> [103]
+                0.00    0.00     135/387786      my_chunk_malloc [62]
+                0.00    0.00     115/900         draw_pin_to_chan_edge [76]
+                0.00    0.00      17/61852301     _fini [339]
+                                  12             try_place <cycle 2> [71]
+-----------------------------------------------
+                                   2             update_transform <cycle 2> [119]
+                                   2             init_graphics <cycle 2> [136]
+[104]    0.0    0.00    0.00       4         highlight_blocks <cycle 2> [104]
+                0.00    0.00     110/900         draw_pin_to_chan_edge [76]
+                0.00    0.00       9/61852301     _fini [339]
+                0.00    0.00       3/387786      my_chunk_malloc [62]
+                0.00    0.00       2/867         print_int_matrix3 [77]
+                                  52             try_place <cycle 2> [71]
+-----------------------------------------------
+                0.00    0.00       1/3           update_region_occ [92]
+                0.00    0.00       2/3           try_timing_driven_route [60]
+[105]    0.0    0.00    0.00       3         alloc_matrix3 [105]
+-----------------------------------------------
+                0.00    0.00       1/3           try_place <cycle 2> [71]
+                0.00    0.00       2/3           main [58]
+[106]    0.0    0.00    0.00       3         drawplace [106]
+                0.00    0.00     189/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                0.00    0.00       1/3           place_and_route [49]
+                0.00    0.00       2/3           etext [1]
+[107]    0.0    0.00    0.00       3         ezxml_decode [107]
+                0.00    0.00     511/6904        alloc_ivector_and_copy_int_list [72]
+                0.00    0.00       1/2           my_atoi [116]
+                0.00    0.00       1/387786      my_chunk_malloc [62]
+                0.00    0.00       1/5614        my_fgets [73]
+-----------------------------------------------
+                0.00    0.00       3/3           get_rr_node_index [262]
+[108]    0.0    0.00    0.00       3         load_rr_indexed_data_T_values [108]
+                0.00    0.00   34184/387786      my_chunk_malloc [62]
+                0.00    0.00       2/2           free_matrix4 [114]
+-----------------------------------------------
+                0.00    0.00       3/3           try_place <cycle 2> [71]
+[109]    0.0    0.00    0.00       3         print_relative_pos_distr [109]
+                0.00    0.00       1/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                0.00    0.00       1/2           draw_triangle_along_line [196]
+                0.00    0.00       1/2           draw_chanx_to_chanx_edge [125]
+[110]    0.0    0.00    0.00       2         draw_rr_chanx [110]
+-----------------------------------------------
+                0.00    0.00       2/2           draw_rr_pin [126]
+[111]    0.0    0.00    0.00       2         draw_rr_chany [111]
+-----------------------------------------------
+                                   2             init_graphics <cycle 2> [136]
+[112]    0.0    0.00    0.00       2         draw_rr_edges <cycle 2> [112]
+                0.00    0.00     248/900         draw_pin_to_chan_edge [76]
+                0.00    0.00     153/387786      my_chunk_malloc [62]
+                0.00    0.00      41/61852301     _fini [339]
+                                  41             try_place <cycle 2> [71]
+-----------------------------------------------
+                0.00    0.00       2/2           ezxml_str2utf8 [14]
+[113]    0.0    0.00    0.00       2         ezxml_toxml_r [113]
+                0.00    0.00     140/387786      my_chunk_malloc [62]
+                0.00    0.00     138/867         print_int_matrix3 [77]
+-----------------------------------------------
+                0.00    0.00       2/2           load_rr_indexed_data_T_values [108]
+[114]    0.0    0.00    0.00       2         free_matrix4 [114]
+                0.00    0.00      86/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                0.00    0.00       1/2           add_route_tree_to_heap [59]
+                0.00    0.00       1/2           etext [1]
+[115]    0.0    0.00    0.00       2         free_route_tree_timing_structs [115]
+-----------------------------------------------
+                0.00    0.00       1/2           read_netlist <cycle 2> [16]
+                0.00    0.00       1/2           ezxml_decode [107]
+[116]    0.0    0.00    0.00       2         my_atoi [116]
+-----------------------------------------------
+                0.00    0.00       2/2           etext [1]
+[117]    0.0    0.00    0.00       2         restore_routing [117]
+-----------------------------------------------
+                                   2             update_transform <cycle 2> [119]
+[118]    0.0    0.00    0.00       2         update_screen <cycle 2> [118]
+                0.00    0.00     188/900         draw_pin_to_chan_edge [76]
+                0.00    0.00       4/387786      my_chunk_malloc [62]
+                                 114             try_place <cycle 2> [71]
+-----------------------------------------------
+                                   2             init_graphics <cycle 2> [136]
+[119]    0.0    0.00    0.00       2         update_transform <cycle 2> [119]
+                0.00    0.00      20/900         draw_pin_to_chan_edge [76]
+                0.00    0.00       3/61852301     _fini [339]
+                0.00    0.00       3/387786      my_chunk_malloc [62]
+                                   2             highlight_blocks <cycle 2> [104]
+                                   2             update_screen <cycle 2> [118]
+-----------------------------------------------
+                0.00    0.00       1/1           get_unidir_opin_connections [29]
+[120]    0.0    0.00    0.00       1         CheckOptions [120]
+                0.00    0.00   20292/20512       ProcessChanWidthDistrDir [69]
+                0.00    0.00       3/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                0.00    0.00       1/1           etext [1]
+[121]    0.0    0.00    0.00       1         alloc_and_load_rr_node_indices [121]
+                0.00    0.00       1/1           alloc_hash_table [122]
+-----------------------------------------------
+                0.00    0.00       1/1           alloc_and_load_rr_node_indices [121]
+[122]    0.0    0.00    0.00       1         alloc_hash_table [122]
+-----------------------------------------------
+                0.00    0.00       1/1           try_place <cycle 2> [71]
+[123]    0.0    0.00    0.00       1         alloc_lookups_and_criticalities [123]
+-----------------------------------------------
+                0.00    0.00       1/1           start_hash_table_iterator [324]
+[124]    0.0    0.00    0.00       1         check_route [124]
+                0.00    0.00       2/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                0.00    0.00       1/1           main [58]
+[125]    0.0    0.00    0.00       1         draw_chanx_to_chanx_edge [125]
+                0.00    0.00       1/2           draw_rr_chanx [110]
+-----------------------------------------------
+                0.00    0.00       1/1           main [58]
+[126]    0.0    0.00    0.00       1         draw_rr_pin [126]
+                0.00    0.00       2/2           draw_rr_chany [111]
+-----------------------------------------------
+                0.00    0.00       1/1           try_place <cycle 2> [71]
+[127]    0.0    0.00    0.00       1         draw_x [127]
+-----------------------------------------------
+                                   1             drawarc [128]
+                0.00    0.00       1/1           fillrect [230]
+[128]    0.0    0.00    0.00       1+1       drawarc [128]
+                0.00    0.00       5/900         draw_pin_to_chan_edge [76]
+                0.00    0.00       1/387786      my_chunk_malloc [62]
+                                   1             drawarc [128]
+-----------------------------------------------
+                                   2             drawbut [129]
+                0.00    0.00       1/1           init_graphics <cycle 2> [136]
+[129]    0.0    0.00    0.00       1+2       drawbut [129]
+                0.00    0.00      17/900         draw_pin_to_chan_edge [76]
+                0.00    0.00       5/61852301     _fini [339]
+                                   2             drawbut [129]
+-----------------------------------------------
+                0.00    0.00       1/1           etext [1]
+[130]    0.0    0.00    0.00       1         ezxml_internal_dtd [130]
+-----------------------------------------------
+                0.00    0.00       1/1           init_graphics <cycle 2> [136]
+[131]    0.0    0.00    0.00       1         fillarc [131]
+                0.00    0.00       5/61852301     _fini [339]
+                0.00    0.00       3/900         draw_pin_to_chan_edge [76]
+                0.00    0.00       1/387786      my_chunk_malloc [62]
+                0.00    0.00       1/43          event_loop [96]
+                0.00    0.00       1/1359        free_chunk_memory [74]
+-----------------------------------------------
+                0.00    0.00       1/1           main [58]
+[132]    0.0    0.00    0.00       1         frame_dummy [132]
+-----------------------------------------------
+                0.00    0.00       1/1           place_and_route [49]
+[133]    0.0    0.00    0.00       1         free_route_structs [133]
+-----------------------------------------------
+                0.00    0.00       1/1           try_place <cycle 2> [71]
+[134]    0.0    0.00    0.00       1         get_block_center [134]
+-----------------------------------------------
+                0.00    0.00       1/1           get_unidir_track_to_chan_seg [13]
+[135]    0.0    0.00    0.00       1         get_track_to_ipins [135]
+-----------------------------------------------
+                                   2             init_graphics <cycle 2> [136]
+                                   1             try_place <cycle 2> [71]
+[136]    0.0    0.00    0.00       1+2       init_graphics <cycle 2> [136]
+                0.00    0.00      50/900         draw_pin_to_chan_edge [76]
+                0.00    0.00       8/387786      my_chunk_malloc [62]
+                0.00    0.00       4/5           init_draw_coords [101]
+                0.00    0.00       2/61852301     _fini [339]
+                0.00    0.00       1/1           drawbut [129]
+                0.00    0.00       1/1           rect_off_screen [143]
+                0.00    0.00       1/1           update_ps_transform [145]
+                0.00    0.00       1/1           zoom_in [146]
+                0.00    0.00       1/1           fillarc [131]
+                0.00    0.00       1/43          event_loop [96]
+                                   4             drawroute <cycle 2> [103]
+                                   2             update_transform <cycle 2> [119]
+                                   2             draw_rr_edges <cycle 2> [112]
+                                   2             highlight_blocks <cycle 2> [104]
+                                   2             init_graphics <cycle 2> [136]
+-----------------------------------------------
+                0.00    0.00       1/1           translate_left [330]
+[137]    0.0    0.00    0.00       1         map_button [137]
+                0.00    0.00       2/61852301     _fini [339]
+                0.00    0.00       2/900         draw_pin_to_chan_edge [76]
+                0.00    0.00       1/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                0.00    0.00       1/1           main [58]
+[138]    0.0    0.00    0.00       1         my_strncpy [138]
+-----------------------------------------------
+                0.00    0.00       1/1           try_swap [19]
+[139]    0.0    0.00    0.00       1         my_strtok [139]
+                0.00    0.00     867/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                0.00    0.00       1/1           get_rr_node_index [262]
+[140]    0.0    0.00    0.00       1         print_critical_path [140]
+                0.00    0.00       5/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                0.00    0.00       1/1           try_place <cycle 2> [71]
+[141]    0.0    0.00    0.00       1         print_sink_delays [141]
+-----------------------------------------------
+                0.00    0.00       1/1           get_unidir_opin_connections [29]
+[142]    0.0    0.00    0.00       1         read_user_pad_loc [142]
+-----------------------------------------------
+                0.00    0.00       1/1           init_graphics <cycle 2> [136]
+[143]    0.0    0.00    0.00       1         rect_off_screen [143]
+                0.00    0.00       1/900         draw_pin_to_chan_edge [76]
+-----------------------------------------------
+                0.00    0.00       1/1           etext [1]
+[144]    0.0    0.00    0.00       1         routing_stats [144]
+-----------------------------------------------
+                0.00    0.00       1/1           init_graphics <cycle 2> [136]
+[145]    0.0    0.00    0.00       1         update_ps_transform [145]
+                0.00    0.00       4/900         draw_pin_to_chan_edge [76]
+                0.00    0.00       3/61852301     _fini [339]
+                0.00    0.00       2/1359        free_chunk_memory [74]
+                0.00    0.00       1/387786      my_chunk_malloc [62]
+-----------------------------------------------
+                0.00    0.00       1/1           init_graphics <cycle 2> [136]
+[146]    0.0    0.00    0.00       1         zoom_in [146]
+                0.00    0.00       3/900         draw_pin_to_chan_edge [76]
+                0.00    0.00       2/61852301     _fini [339]
+-----------------------------------------------
+                               11821             label_wire_muxes [281]
+[281]    0.0    0.00    0.00       0+11821   label_wire_muxes [281]
+                               11821             label_wire_muxes [281]
+-----------------------------------------------
+                0.00    0.00       1/61852301     main [58]
+                0.00    0.00       1/61852301     place_and_route [49]
+                0.00    0.00       1/61852301     zoom_fit [337]
+                0.00    0.00       1/61852301     translate_up [332]
+                0.00    0.00       1/61852301     translate_left [330]
+                0.00    0.00       1/61852301     force_setcolor [232]
+                0.00    0.00       1/61852301     clearscreen [183]
+                0.00    0.00       1/61852301     drawrect [198]
+                0.00    0.00       1/61852301     drawtext [200]
+                0.00    0.00       2/61852301     init_draw_coords [101]
+                0.00    0.00       2/61852301     zoom_in [146]
+                0.00    0.00       2/61852301     zoom_out [338]
+                0.00    0.00       2/61852301     map_button [137]
+                0.00    0.00       2/61852301     destroy_button [191]
+                0.00    0.00       2/61852301     init_graphics <cycle 2> [136]
+                0.00    0.00       3/61852301     update_transform <cycle 2> [119]
+                0.00    0.00       3/61852301     update_ps_transform [145]
+                0.00    0.00       3/61852301     drawline [197]
+                0.00    0.00       5/61852301     drawbut [129]
+                0.00    0.00       5/61852301     fillarc [131]
+                0.00    0.00       6/61852301     redraw_screen [313]
+                0.00    0.00       6/61852301     fillpoly [229]
+                0.00    0.00       9/61852301     highlight_blocks <cycle 2> [104]
+                0.00    0.00      17/61852301     drawroute <cycle 2> [103]
+                0.00    0.00      41/61852301     draw_rr_edges <cycle 2> [112]
+                0.00    0.00     221/61852301     get_first_pin [78]
+                0.00    0.00     224/61852301     compute_delay_lookup_tables [85]
+                0.00    0.00     633/61852301     draw_pin_to_chan_edge [76]
+                0.00    0.00 61851104/61852301     etext [1]
+[339]    0.0    0.00    0.00 61852301         _fini [339]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2014 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+ [120] CheckOptions          [106] drawplace               [4] load_rc_tree_T
+   [2] CountTokens           [103] drawroute             [108] load_rr_indexed_data_T_values
+  [66] FreeTokens              [1] etext                  [39] load_sblock_pattern_lookup
+  [69] ProcessChanWidthDistrDir [96] event_loop          [137] map_button
+  [63] ProcessOption         [107] ezxml_decode          [116] my_atoi
+  [11] ReadLineTokens        [130] ezxml_internal_dtd     [62] my_chunk_malloc
+  [53] SetupVPR               [80] ezxml_open_tag         [73] my_fgets
+  [68] XmlReadArch            [90] ezxml_parse_str       [138] my_strncpy
+ [339] _fini                  [55] ezxml_toxml           [139] my_strtok
+  [59] add_route_tree_to_heap [113] ezxml_toxml_r         [49] place_and_route
+  [40] add_rr_graph_C_from_switches [131] fillarc         [89] post_place_sync
+  [82] alloc_and_load_edges_and_switches [132] frame_dummy [140] print_critical_path
+  [20] alloc_and_load_grid    [74] free_chunk_memory      [77] print_int_matrix3
+  [17] alloc_and_load_pin_to_track_map [95] free_ivec_vector [54] print_lambda
+ [121] alloc_and_load_rr_node_indices [100] free_matrix3  [45] print_net_delay
+  [12] alloc_and_load_timing_graph [114] free_matrix4      [5] print_place
+  [93] alloc_and_load_timing_graph_levels [8] free_rc_tree [109] print_relative_pos_distr
+ [122] alloc_hash_table      [133] free_route_structs    [141] print_sink_delays
+  [72] alloc_ivector_and_copy_int_list [115] free_route_tree_timing_structs [30] print_timing_graph
+ [123] alloc_lookups_and_criticalities [83] free_rr_graph [16] read_netlist
+ [105] alloc_matrix3         [134] get_block_center      [142] read_user_pad_loc
+  [98] alloc_route_structs     [7] get_directed_search_expected_cost [143] rect_off_screen
+  [51] alloc_sblock_pattern_lookup [78] get_first_pin    [117] restore_routing
+  [67] allocate_and_load_critical_path [65] get_mst_of_net [144] routing_stats
+  [26] build_rr_graph          [6] get_segment_usage_stats [31] sync_nets_to_blocks
+  [86] check_netlist          [75] get_timing_driven_expected_cost [27] timing_driven_route_net
+  [88] check_node            [135] get_track_to_ipins     [64] try_breadth_first_route
+ [124] check_route            [43] get_track_to_tracks     [9] try_directed_search_route
+  [21] comp_td_costs          [13] get_unidir_track_to_chan_seg [71] try_place
+  [18] comp_td_point_to_point_delay [104] highlight_blocks [19] try_swap
+  [85] compute_delay_lookup_tables [91] init_chan         [60] try_timing_driven_route
+  [99] count_routing_transistors [101] init_draw_coords   [97] update_bb
+ [125] draw_chanx_to_chanx_edge [136] init_graphics       [87] update_message
+  [70] draw_chany_to_chany_edge [79] init_postscript     [145] update_ps_transform
+  [76] draw_pin_to_chan_edge  [94] insert_in_edge_list    [92] update_region_occ
+ [110] draw_rr_chanx         [102] insert_in_int_list     [23] update_route_tree
+ [111] draw_rr_chany          [42] is_sbox               [118] update_screen
+ [112] draw_rr_edges          [81] load_chan_rr_indices  [119] update_transform
+ [126] draw_rr_pin            [35] load_net_delay_from_routing [84] watch_edges
+ [127] draw_x                 [36] load_net_slack        [146] zoom_in
+ [128] drawarc                [22] load_one_fb_fanout_count [10] <cycle 1>
+ [129] drawbut                 [3] load_rc_tree_C         [15] <cycle 2>

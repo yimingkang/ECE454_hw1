@@ -1,12 +1,10 @@
 #!/bin/bash
 N=10
-T=8
-rm ./times
+rm ./.times
 for i in `seq 1 $N`;
 do
-        make clean > /dev/null
-        /usr/bin/time -a -p -o ./times make -j $T > /dev/null
+        /usr/bin/time -a -p -o ./.times vpr iir1.map4.latren.net k4-n10.xml place.out route.out -nodisp -place_only -seed 0 > /dev/null
         echo $i
 done
-echo "Average real ($T theads):"
-cat times | grep real | sed 's/real //' | awk "{s+=\$1} END {print s/$N}"
+echo "Average user :"
+cat ./.times | grep user | sed 's/user //' | awk "{s+=\$1} END {print s/$N}"
