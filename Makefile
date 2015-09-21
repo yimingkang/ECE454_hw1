@@ -8,7 +8,7 @@ WARN_FLAGS = -Wall -Wpointer-arith -Wcast-qual -Wstrict-prototypes -O -D__USE_FI
 DEBUG_FLAGS = -g 
 
 # 454: MODIFY THESE OPT FLAGS FOR GPROF, GCOV
-OPT_FLAGS = -g -pg
+OPT_FLAGS = -O3
 
 #FLAGS = $(WARN_FLAGS) -D EZXML_NOMMAP
 FLAGS = $(OPT_FLAGS) -D EZXML_NOMMAP
