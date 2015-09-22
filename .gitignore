@@ -35,4 +35,6 @@
 vpr
 
 #blah1
+*.gcov
 *.gcda
+*.gcno
