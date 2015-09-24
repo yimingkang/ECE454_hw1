@@ -1380,39 +1380,40 @@ try_swap(float t,
 
 	    /* If we swapped two blocks connected to the same net, its bounding box *
 	     * doesn't change.                                                      */
+        int move_type = net_block_moved[k];
 
-	    if(net_block_moved[k] == FROM_AND_TO)
-		continue;
+	    if(move_type == FROM_AND_TO)
+		    continue;
+
+        struct s_bb *bb_cord_at_idx = &bb_coord_new[bb_index];
 
 	    if(net[inet].num_sinks < SMALL_NET)
 		{
-		    get_non_updateable_bb(inet, &bb_coord_new[bb_index]);
+		    get_non_updateable_bb(inet, bb_cord_at_idx);
 		}
 	    else
 		{
-		    if(net_block_moved[k] == FROM)
-			update_bb(inet, &bb_coord_new[bb_index],
-				  &bb_edge_new[bb_index], x_from, y_from,
+            struct s_bb *bb_cord_edge = &bb_edge_new[bb_index];
+		    if(move_type == FROM)
+			update_bb(inet, bb_cord_at_idx,
+				  bb_cord_edge, x_from, y_from,
 				  x_to, y_to);
 		    else
-			update_bb(inet, &bb_coord_new[bb_index],
-				  &bb_edge_new[bb_index], x_to, y_to, x_from,
+			update_bb(inet, bb_cord_at_idx,
+				  bb_cord_edge, x_to, y_to, x_from,
 				  y_from);
 		}
 
 	    if(place_cost_type != NONLINEAR_CONG)
 		{
-		    temp_net_cost[inet] =
-			get_net_cost(inet, &bb_coord_new[bb_index]);
+		    temp_net_cost[inet] = get_net_cost(inet, bb_cord_at_idx);
 		    bb_delta_c += temp_net_cost[inet] - net_cost[inet];
 		}
 	    else
 		{
 		    /* Rip up, then replace with new bb. */
-		    update_region_occ(inet, &bb_coords[inet], -1,
-				      num_regions);
-		    update_region_occ(inet, &bb_coord_new[bb_index], 1,
-				      num_regions);
+		    update_region_occ(inet, &bb_coords[inet], -1, num_regions);
+		    update_region_occ(inet, bb_cord_at_idx, 1, num_regions);
 		}
 
 	    bb_index++;
